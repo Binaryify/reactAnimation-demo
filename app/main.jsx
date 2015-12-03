@@ -11,12 +11,12 @@ class App extends React.Component{
   constructor(){
     super()
     this.state={
-      "item":[{"haha":"1212"}]
+      "item":[{"test":"1212"}]
     }
   }
   handleClick(){
       var arr= this.state.item
-      arr=[...this.state.item,{"haha":"1212"}];
+      arr=[...this.state.item,{"test":"1212"}];
       console.log(arr)
       this.setState({
         item:arr
@@ -24,7 +24,7 @@ class App extends React.Component{
   }
   render(){
     var it=this.state.item.map(function(item){
-      return <div>{item.haha}</div>
+      return <div>{item.test}</div>
     })
     console.log(it)
     return(
