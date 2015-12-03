@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ReactCssTransitionGroup from "react-addons-css-transition-group"
-
+import "./app.scss"
 var style={
   position:"absolute",
   right:"100px",
